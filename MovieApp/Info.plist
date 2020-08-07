@@ -62,5 +62,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app wants to use your picture &amp; video library.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app wants to use your camera to detect movement.</string>
 </dict>
 </plist>

@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4BEFF7824CF34A2004DB495 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BEFF7824CF34A2004DB495 /* Video Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video Cube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BEFF7B24CF34A2004DB495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BEFF7D24CF34A2004DB495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B4BEFF7F24CF34A2004DB495 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +41,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3A41E424DB2A47002D8538 /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEFF7B24CF34A2004DB495 /* AppDelegate.swift */,
+				B4BEFF7D24CF34A2004DB495 /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		0D3A41E624DB2A72002D8538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEFF8124CF34A2004DB495 /* Main.storyboard */,
+				B4BEFF8624CF34A9004DB495 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D3A41E724DB2CDC002D8538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEFF7F24CF34A2004DB495 /* MovieViewController.swift */,
+				B4FCA83524D07DCF0057611E /* MoviePlayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D3A41E824DB2D0C002D8538 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0D3A41E624DB2A72002D8538 /* Views */,
+				0D3A41E724DB2CDC002D8538 /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0D3A41E924DB2D31002D8538 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEFF8424CF34A9004DB495 /* Assets.xcassets */,
+				B4BEFF8F24CF4258004DB495 /* Extensions.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B4BEFF6F24CF34A2004DB495 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +97,7 @@
 		B4BEFF7924CF34A2004DB495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4BEFF7824CF34A2004DB495 /* MovieApp.app */,
+				B4BEFF7824CF34A2004DB495 /* Video Cube.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,15 +105,10 @@
 		B4BEFF7A24CF34A2004DB495 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				B4BEFF7B24CF34A2004DB495 /* AppDelegate.swift */,
-				B4BEFF7D24CF34A2004DB495 /* SceneDelegate.swift */,
-				B4BEFF7F24CF34A2004DB495 /* MovieViewController.swift */,
-				B4FCA83524D07DCF0057611E /* MoviePlayViewController.swift */,
-				B4BEFF8124CF34A2004DB495 /* Main.storyboard */,
-				B4BEFF8424CF34A9004DB495 /* Assets.xcassets */,
-				B4BEFF8624CF34A9004DB495 /* LaunchScreen.storyboard */,
+				0D3A41E424DB2A47002D8538 /* App Delegates */,
+				0D3A41E824DB2D0C002D8538 /* Source */,
+				0D3A41E924DB2D31002D8538 /* Supporting Files */,
 				B4BEFF8924CF34A9004DB495 /* Info.plist */,
-				B4BEFF8F24CF4258004DB495 /* Extensions.swift */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -90,7 +130,7 @@
 			);
 			name = MovieApp;
 			productName = MovieApp;
-			productReference = B4BEFF7824CF34A2004DB495 /* MovieApp.app */;
+			productReference = B4BEFF7824CF34A2004DB495 /* Video Cube.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -300,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.MovieApp.MovieApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Video Cube";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.MovieApp.MovieApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Video Cube";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
