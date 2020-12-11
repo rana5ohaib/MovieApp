@@ -119,31 +119,40 @@ class MoviePlayViewController: UIViewController, AVCaptureVideoDataOutputSampleB
     }
     
     @objc func snapshot() {
-        
-        guard let image = cameraImage else { print("NO SNAPSHOT"); return }
-        
-        let request = VNDetectFaceRectanglesRequest { (request, error) in
-            
-            if let err = error {
-                print("Failed to detect faces: ", err)
-                return
+    
+        let i = 0...20
+        var faceFound = false
+        for _ in i.indices {
+
+            guard let image = cameraImage else { print("NO SNAPSHOT"); return }
+
+            let request = VNDetectFaceRectanglesRequest { (request, error) in
+                
+                if let err = error {
+                    print("Failed to detect faces: ", err)
+                    return
+                }
+                
+                if request.results?.count ?? 0 > 0 {
+                    faceFound = true
+                }
             }
             
-            if request.results?.count ?? 0 > 0 {
-                self.player?.play()
-            } else {
-                self.stopAndBringToStart()
+            
+            let handler = VNImageRequestHandler(cgImage: image, options: [:])
+            
+            do {
+                try handler.perform([request])
+            }
+            catch {
+                print("Failed to perform request", error)
             }
         }
         
-        
-        let handler = VNImageRequestHandler(cgImage: image, options: [:])
-        
-        do {
-            try handler.perform([request])
-        }
-        catch {
-            print("Failed to perform request", error)
+        if faceFound {
+            self.player?.play()
+        } else {
+            self.stopAndBringToStart()
         }
     }
 }

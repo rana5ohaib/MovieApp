@@ -333,13 +333,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BXZLLHFDX;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 98L7UN5SW9;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.MovieApp.MovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeischGmbH.VideoCube;
 				PRODUCT_NAME = "Video Cube";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,13 +352,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BXZLLHFDX;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 98L7UN5SW9;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.MovieApp.MovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeischGmbH.VideoCube;
 				PRODUCT_NAME = "Video Cube";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
